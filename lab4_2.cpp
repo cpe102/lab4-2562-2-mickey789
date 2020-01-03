@@ -1,12 +1,21 @@
 #include<iostream>
-
+#include<cmath>
 using namespace std;
 
-//Write function findDistance() here
+float findDistance (float u, float a, float t){
+    float s = u*t + 0.5 * a * pow(t,2);
+    return s;
+}
 
 int main(){
-
-  //Calling findDistance() using test cases
-
-  return 0;
+	float u, a, t;
+    cout << "Enter u = ";
+    cin >> u;
+    cout << "Enter a = ";
+    cin >> a;
+    cout << "Enter t = ";
+    cin >> t;
+    cout << "s = " << findDistance(u,a,t);
+    
+    return 0;
 }
